@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.nav{
+    background-color: $primary;
+    height: $header-size;
+    font-size: $font-size;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 5px;
+    color: $white;
+}
+
+.nav__ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a:visited{
+        color: $white;
+    }
+}
+
+.nav__socials{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.5rem;
+
+    a{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    a:visited{
+        color: $white;
+    }
+}
+
+.nav__logo{
+    display: flex;
+    align-items: center;
+}
+
+@keyframes logo_animation {
+  0%   {border:2px solid $tertiary;}
+  25%  {border:2px solid $quaternary;}
+  50%  {border:2px solid $secondary;}
+  75%  {border:2px solid $quaternary;}
+  100% {border:2px solid $tertiary;}
+
+  from{
+    transform: rotate(0deg);
+  }to{
+    transform: rotate(360deg);
+  }
+}
+
+.nav__logo-img{
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+    margin-right: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    animation-name: logo_animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition: .3s;
+}

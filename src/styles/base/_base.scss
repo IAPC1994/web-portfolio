@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+body{
+    background: linear-gradient(360deg, $primary 20%, $secondary 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
