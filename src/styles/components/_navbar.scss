@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-.nav{
+.nav__container{
     background-color: $primary;
-    height: $header-size;
-    font-size: $font-size;
-    font-family: 'Montserrat', sans-serif;
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    padding: 5px;
     color: $white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: $font-size;
+    height: $header-size;
+    position: fixed;
+    width: 100%;
+}
+
+.nav{
+    display: grid;
+    height: $header-size;
+    grid-template-columns: 1fr 2fr;
+    padding: 5px;
+    width: 80%;
+    margin:auto;
 }
 
 .nav__ul{
@@ -19,26 +27,19 @@
     a:visited{
         color: $white;
     }
-}
 
-.nav__socials{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: 1.5rem;
-
-    a{
-        margin-left: 1rem;
-        margin-right: 1rem;
+    a:hover{
+        color: $tertiary;
     }
 
-    a:visited{
-        color: $white;
+    a:is(:link, :active, :visited).active {
+        color: $tertiary;
     }
 }
 
 .nav__logo{
     display: flex;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -57,14 +58,14 @@
 }
 
 .nav__logo-img{
-    width: 40px;
-    height: 40px;
-    padding: 2px;
-    margin-right: 15px;
-    border-radius: 50px;
-    cursor: pointer;
-    animation-name: logo_animation;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+    animation-name: logo_animation;
+    border-radius: 50px;
+    cursor: pointer;
+    height: 40px;
+    margin-right: 15px;
+    padding: 2px;
     transition: .3s;
+    width: 40px;
 }

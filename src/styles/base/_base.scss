@@ -4,16 +4,22 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(360deg, $primary 20%, $secondary 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
 nav ul{
     list-style-type: none;
 }
 
 nav a{
     text-decoration: none;
-}
-
-body{
-    background: linear-gradient(360deg, $primary 20%, $secondary 100%);
-    background-repeat: no-repeat;
-    height: 100vh;
 }
