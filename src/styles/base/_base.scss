@@ -23,3 +23,11 @@ nav ul{
 nav a{
     text-decoration: none;
 }
+
+.button__basic{
+    padding: 10px 25px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: $font-size;
+    cursor: pointer;
+}

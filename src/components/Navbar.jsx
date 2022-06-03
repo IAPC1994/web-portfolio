@@ -3,7 +3,7 @@ import Img from '../assets/logo512.png';
 
 export const Navbar = () => {
 
-    const [toggle, setToggle] = useState(false);
+    const [toggle, setToggle] = useState(true);
 
     const handleToggle = () => {
         if(toggle)
