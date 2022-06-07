@@ -3,20 +3,20 @@ import Img from '../assets/perfil.jpg';
 
 export const About = () => {
     return (
-        <section id="about" className='about__section border'>
-            <div className='about__title border'>
+        <section id="about" className='about__section'>
+            <div className='about__title'>
                 <h5>Get to Know</h5>
                 <h1>About Me</h1>
             </div>
 
-            <div className='about__container border'>
-                <div className='about__image border'>
+            <div className='about__container'>
+                <div className='about__image'>
                     <div className='image__container'>
                         <img src={ Img } alt="profile_photo"/>
                     </div>
                 </div>
-                <div className='about__description border'>
-                    <div className='about__achievements border'>
+                <div className='about__description'>
+                    <div className='about__achievements'>
                         <div>
                             <i className="fa-solid fa-award"></i>
                             <p>Experience</p>
