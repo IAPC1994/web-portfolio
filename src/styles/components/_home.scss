@@ -73,3 +73,40 @@
         background-color: $primary;
     }
 }
+
+@media screen and ( max-width: 1440px ){
+    .home__button{
+        width: 40%;
+    }
+}
+
+@media screen and ( max-width: 768px ){
+    .home__button{
+        width: 60%;
+    }
+}
+
+@media screen and ( max-width: 425px ){
+
+    .home__container{
+        h3{
+            font-size: 1.5rem;
+        }
+
+        h1{
+            font-size: 1.7rem;
+        }
+
+        h5{
+            font-size: 1.2rem;
+        }
+    }
+
+    .home__button{
+        width: 100%;
+        flex-direction: column;
+        button{
+            margin-top: 20px;
+        }
+    }
+}

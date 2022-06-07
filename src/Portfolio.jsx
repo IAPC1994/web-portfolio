@@ -6,7 +6,7 @@ export const Portfolio = () => {
     <div>
         <Navbar />
         <Home />
-        <About />
+        <About /> 
     </div>
   )
 }
