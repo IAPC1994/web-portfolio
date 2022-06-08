@@ -1,7 +1,65 @@
 .skills__section{
     font-family: $font-family;
-    font-size: $font-size;
     height: $section-height;
     padding: $header-size;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills__title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.5rem;
+
+    h1{
+        color: $quaternary;
+    }
+
+    h4{
+        color: rgba(255,255,255,0.3);
+    }
+}
+
+.skills__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.skills__content{
+    color: $quaternary;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 3px rgba(0,0,0, 0.5);
+    padding: 10px;
+}
+
+.skills__list{
+    padding: 15px;
+}
+
+.skills__content-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.skills__percentage{
     border: $border-white;
+    border-radius: 10px;
+    margin-top: 5px;
+    height: 15px;
+    background-color: $quaternary;
+}
+
+.skills__level{
+    width: 85%;
+    height: 13px;
+    border-radius: 10px;
+    background-color: $secondary;
 }
