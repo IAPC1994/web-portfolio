@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Home, About } from './components';
+import { Navbar, Home, About, Skills } from './components';
 
 export const Portfolio = () => {
   return (
@@ -7,6 +7,7 @@ export const Portfolio = () => {
         <Navbar />
         <Home />
         <About /> 
+        <Skills />
     </div>
   )
 }
