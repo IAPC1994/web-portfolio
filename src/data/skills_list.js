@@ -32,18 +32,22 @@ export const frontendSkills = [
 export const backendSkills = [
     {
         title: 'SQL',
-        percentage: 53
+        percentage: 75
     },
     {
-        title: 'JSON',
-        percentage: 100
+        title: 'NodeJS',
+        percentage: 40
     },
     {
-        title: 'Docker',
+        title: 'MongoDB',
         percentage: 45
+    },
+    {
+        title: 'Firebase',
+        percentage: 65
     },
     {
         title: 'Spring Boot',
         percentage: 50
-    }
+    },
 ];
