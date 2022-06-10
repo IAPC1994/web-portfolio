@@ -17,3 +17,16 @@ $font-size: 1rem;
 $font-family: 'Montserrat', sans-serif;
 $section-height: 100vh;
 $border-white: 1px solid $white;
+
+.flex__all-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex__center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

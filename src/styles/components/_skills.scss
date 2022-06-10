@@ -2,16 +2,11 @@
     font-family: $font-family;
     height: $section-height;
     padding: $header-size;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @extend .flex__center;
 }
 
 .skills__title{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend .flex__all-center;
     width: 100%;
     font-size: 1.5rem;
 

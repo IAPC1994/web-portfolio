@@ -3,9 +3,7 @@
     font-size: $font-size;
     height: $section-height;
     padding: $header-size;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @extend .flex__center;
 }
 
 .about__title{
@@ -29,9 +27,8 @@
 }
 
 .about__image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend .flex__center;
+    flex-direction: row;
 }
 
 .image__container{
