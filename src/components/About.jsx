@@ -33,13 +33,24 @@ export const About = () => {
                             <small>+3 Projects</small>
                         </div>
                     </div>
-
+                    
                     <div className='about__me border'>
                         <p> 
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis praesentium amet aut. Optio unde tempore ut incidunt suscipit non perferendis quisquam, nihil minus officia odit necessitatibus dolor itaque quaerat. 
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque distinctio natus architecto dolorum voluptas nemo dicta rerum sed. Adipisci officia atque dolorum nihil quidem ab ad non minima est vel.
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore iusto error suscipit repellat inventore impedit illum ullam vero saepe reprehenderit obcaecati quaerat porro, harum esse vitae dolorum temporibus perspiciatis.
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, numquam tempore. Aut nobis laborum corrupti culpa odio. Repellat, rerum animi, explicabo culpa doloribus mollitia voluptatem at nam ab officia vitae.
+                            I'am a Frontend Developer with more than 3 years of experience 
+                            developing web and mobile applications. Implementing CI/CD, 
+                            using agile methodologies (SCRUM). 
+                        </p>
+                        <br/>
+                        <p>
+                            In my first years I used Java with Primefaces 
+                            and a bit of Spring Boot framework. I'm currently practicing my skills with the 
+                            MERN stack (<strong>M</strong>ongo, <strong>E</strong>xpress, <strong>R</strong>eact, <strong>N</strong>ode JS) and doing courses on this same.
+                            I'm a professional looking for more challenges and new knowledge in current technologies.
+                            I like do teamwork and keep my code clean and tested. 
+                        </p>
+                        <br/>
+                        <p>
+                            You can find some project on my GitHub or <a href="#portfolio">here</a>.
                         </p>
                     </div>
                 </div>

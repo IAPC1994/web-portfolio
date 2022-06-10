@@ -48,6 +48,6 @@ export const backendSkills = [
     },
     {
         title: 'Spring Boot',
-        percentage: 50
+        percentage: 45
     },
 ];

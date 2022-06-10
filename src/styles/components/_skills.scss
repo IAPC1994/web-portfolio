@@ -37,6 +37,10 @@
     border-radius: 20px;
     box-shadow: 5px 5px 15px 3px rgba(0,0,0, 0.5);
     padding: 10px;
+    
+    i{
+        font-size: 1.5rem;
+    }
 }
 
 .skills__list{
@@ -63,3 +67,43 @@
     border-radius: 10px;
     background-color: $secondary;
 }
+
+.skills__accordion{
+    display: none;
+    cursor: pointer;
+}
+
+
+@media screen and ( max-width: 425px) {
+    .skills__section{
+        padding-top: $header-size;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .skills__container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .skills__content{
+        height: 70px;
+    } 
+    
+    .skills__accordion{
+        display: block;
+    }
+    
+    .frontend__list{
+        display: none;
+    }
+}
+
+.open__content{
+    height: auto;
+}
+
+.open__list{
+    display: block;
+}
+
