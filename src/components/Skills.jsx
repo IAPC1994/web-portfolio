@@ -39,7 +39,7 @@ export const Skills = () => {
             <div className='skills__container'>
                 <div id='frontendSkills' className='skills__content'>
                     <h1>Frontend Developer</h1>
-                    <div id="frontend__skills" className='frontend__list'>
+                    <div id="frontend__skills" className='list'>
                         {
                             frontendSkills.map( ({ title, percentage }) => (
                                 <SkillsItem id='frontend' key={ title } title={ title } percentage={ percentage } />
@@ -53,7 +53,7 @@ export const Skills = () => {
 
                 <div id='backendSkills' className='skills__content'>
                     <h1>Backend Developer</h1>
-                    <div id="backend__skills" className='frontend__list'>
+                    <div id="backend__skills" className='list'>
                     {
                         backendSkills.map( ({ title, percentage }) => (
                             <SkillsItem id='backend' key={ title } title={ title } percentage={ percentage } />

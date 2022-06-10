@@ -69,11 +69,16 @@
 }
 
 
+
 @media screen and ( max-width: 425px) {
     .skills__section{
         padding-top: $header-size;
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .skills__title{
+        font-size: 2rem;
     }
 
     .skills__container{
@@ -89,7 +94,7 @@
         display: block;
     }
     
-    .frontend__list{
+    .list{
         display: none;
     }
 }
@@ -101,4 +106,5 @@
 .open__list{
     display: block;
 }
+
 
