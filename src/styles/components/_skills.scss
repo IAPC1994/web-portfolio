@@ -8,7 +8,7 @@
 .skills__title{
     @extend .flex__all-center;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 2rem;
 
     h1{
         color: $quaternary;
@@ -40,6 +40,11 @@
     i{
         font-size: 1.5rem;
     }
+}
+
+.skills__content:hover{
+    background-color: $secondary;
+    transition: .3s;
 }
 
 .skills__list{

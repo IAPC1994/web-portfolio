@@ -27,7 +27,7 @@
 }
 
 .about__image{
-    @extend .flex__center;
+    @extend .flex__all-center;
     flex-direction: row;
 }
 
@@ -99,6 +99,11 @@
         text-decoration: none;
         color: $secondary;
     }
+}
+
+.about__me:hover{
+    background-color: $secondary;
+    transition: .3s;
 }
 
 @media screen and ( max-width: 1024px ){

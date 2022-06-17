@@ -1,0 +1,46 @@
+.portfolio__section{
+    font-family: $font-family;
+    font-size: $font-size;
+    height: $section-height;
+    padding: $header-size;
+    @extend .flex__center;
+}
+
+.portfolio__container{
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+
+    @extend .flex__all-center;
+
+    h1{
+        color: $quaternary;
+    }
+
+    h5{
+        color: rgba(255,255,255, 0.3);
+    }
+}
+
+.portfolio__content{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+
+    padding: 20px;
+}
+
+.portfolio__item{
+    background: rgba(255,255,255,0.2);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+.portfolio__item:hover{
+    background-color: $secondary;
+    transition: .3s;
+}
