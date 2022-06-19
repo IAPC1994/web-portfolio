@@ -12,8 +12,12 @@
     padding: 20px;
 
     @extend .flex__all-center;
-
+    
     h1{
+        color: $quaternary;
+    }
+
+    h3{
         color: $quaternary;
     }
 
@@ -36,6 +40,33 @@
     width: 300px;
     height: 350px;
     padding: 20px;
+
+    .portfolio__item-title{
+        padding: 10px;
+    }
+
+    .portfolio__item-image{
+        img{
+            border-radius: 15px;
+            width: 250px;
+        }
+    }
+    .portfolio__item-buttons{
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        button{
+            @extend .button__basic;
+            background-color: $secondary;
+            color: white;
+            border: 1px solid $white;
+        }
+    }
+}
+
+.portfolio__item-buttons button:hover{
+    background-color: $tertiary;
+    transition: .3s;
 }
 
 .portfolio__item:hover{
@@ -72,4 +103,47 @@
 .swiper {
     margin-left: auto;
     margin-right: auto;
+}
+
+@media screen and ( max-width: 425px ){
+    
+    .portfolio__container{
+        padding: 0px;
+    }
+
+    .portfolio__content{
+        width: 425px;
+    }
+    .swiper-button-prev{
+        display: none;
+    }
+    .swiper-button-next{
+        display: none;
+    }
+}
+
+@media screen and ( width: 375px ){
+    
+    .portfolio__content{
+        width: 375px;
+    }
+    .swiper-button-prev{
+        display: none;
+    }
+    .swiper-button-next{
+        display: none;
+    }
+}
+
+@media screen and ( width: 320px ){
+    
+    .portfolio__content{
+        width: 320px;
+    }
+    .swiper-button-prev{
+        display: none;
+    }
+    .swiper-button-next{
+        display: none;
+    }
 }
