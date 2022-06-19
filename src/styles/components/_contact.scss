@@ -1,0 +1,259 @@
+.contact__section{
+    font-family: $font-family;
+    font-size: $font-size;
+    height: $section-height;
+    padding: $header-size;
+    @extend .flex__center;
+}
+
+.contact__container{
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+
+    h1{
+        color: $quaternary;
+    }
+
+    h5{
+        color: rgba(255,255,255, 0.3);
+    }
+
+    @extend .flex__all-center;
+}
+
+.contact__content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    padding: 20px;
+}
+
+.contact__email{
+    width: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 3px rgba(0,0,0, 0.5);
+    background: rgba(255,255,255,0.2);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255,255,255,0.1);
+
+    i{
+        padding: 10px;
+        color: $tertiary;
+    }
+
+    h6{
+        margin-top: 20px;
+        color: $quaternary;
+    }
+
+    p{
+        font-size: 1.5rem;
+        color: $tertiary;
+    }
+
+    a{
+        text-decoration: none;
+        border: $border-white;
+        cursor: pointer;
+        background-color: $secondary;
+        border-radius: 20px;
+        padding: 10px;
+        font-size: 1rem;
+        color: $quaternary;
+    }
+
+    a:hover{
+        background-color: $tertiary;
+    }
+}
+
+.contact__email:hover{
+    background-color: $secondary;
+    transition: .3s;
+}
+
+.contact__email-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+
+.contact__form{
+    width: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 3px rgba(0,0,0, 0.5);
+    background: rgba(255,255,255,0.2);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255,255,255,0.1);
+
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    input{
+        height: 50px;
+        padding: 15px;
+        background-color: $quaternary;
+        color: $primary;
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: $font-family;
+        border: 1px solid $white;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    textarea{
+        height: 150px;
+        padding: 15px;
+        background-color: $quaternary;
+        color: $primary;
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: $font-family;
+        border: 1px solid $white;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    button{
+        @extend .button__basic;
+        width: 20%;
+        margin-left: auto;
+        background-color: $secondary;
+        color: white;
+        border: 1px solid $white;
+    }
+}
+
+.contact__form:hover{
+    background-color: $secondary;
+    transition: .3s;
+}
+
+.contact__form button:hover{
+    background-color: $tertiary;
+    transition: .3s;
+}
+
+@media screen and ( max-width: 1024px ){
+    .contact__content{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    
+    .contact__email{
+        width: 100%;
+    }
+    
+    .contact__form{
+        width: 100%;
+        button{
+            width: 50%;
+        }
+    }
+}
+
+@media screen and ( max-width: 768px ){
+
+    .contact__content{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact__email{
+        width: 100%;
+    }
+
+    .contact__form{
+        width: 100%;
+        button{
+            width: 50%;
+        }
+    }
+
+    .contact__email-button{
+        height: 30%;
+    }
+}
+
+@media screen and ( max-width: 425px ){
+
+    .contact__container{
+        h1{
+            font-size: 1.5rem;
+        }
+    
+        h5{
+            font-size: 1rem;
+        }
+    }
+    
+    .contact__content{
+        padding: 10px;
+        width: 420px;
+    }
+
+    .contact__email{
+        width: 100%;
+        font-size: 1.5rem;
+
+        p{
+            font-size: 0.75rem;
+            color: $tertiary;
+        }
+    
+        a{
+            font-size: 0.6rem;
+        }
+    }
+
+    .contact__form{
+        width: 100%;
+
+        button{
+            width: 100%;
+        }
+
+        input{
+            height: 25px;
+            padding: 15px;
+        }
+    
+        textarea{
+            height: 75px;
+            padding: 15px;
+        }
+    }
+
+    .contact__email-button{
+        height: 30%;
+    }
+}
+
+@media screen and ( max-width: 375px ){
+    .contact__content{
+        padding: 10px;
+        width: 320px;
+    }
+    .contact__container{
+        
+        h1{
+            font-size: 1.5rem;
+        }
+    
+        h5{
+            font-size: 1rem;
+        }
+    }
+}
