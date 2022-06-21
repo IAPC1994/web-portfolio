@@ -173,6 +173,11 @@
 
     .contact__email{
         width: 100%;
+
+        p{
+            font-size: 1rem;
+            color: $tertiary;
+        }
     }
 
     .contact__form{

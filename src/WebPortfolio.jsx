@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Home, About, Skills, Portfolio, Contact } from './components';
+import { Navbar, Home, About, Skills, Portfolio, Contact, Footer } from './components';
 
 export const WebPortfolio = () => {
   return (
@@ -10,6 +10,7 @@ export const WebPortfolio = () => {
         <Skills />
         <Portfolio />
         <Contact />
+        <Footer />
     </div>
   )
 }
