@@ -1,6 +1,6 @@
 .home__section{
     height: $section-height;
-    padding: $header-size 0px;
+    padding-top: $header-size;
     background-color: $background;
     display: flex;
     justify-content: center;
@@ -8,7 +8,7 @@
 
 .home__container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 2rem;
     width: 100%;
 }
@@ -37,26 +37,12 @@
 .home__image{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .home__image-profile{
-    width: 500px;
-    height: 500px;
-    border-radius: 100%;
+    width: 600px;
+    height: 800px;
     display: flex;
     justify-content: center;
-    box-shadow: $box-shadow;
-}
-
-.home__image-photo{
-    width: 300px;
-    height: 400px;
-    border-radius: 0px 0px 100px 100px;
-    
-    img{
-        width: 280px;
-        height: 350px;
-        border-radius: 50px;
-    }
 }

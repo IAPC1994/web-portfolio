@@ -15,13 +15,11 @@ export const Home = () => {
                         </div>
                         <br /> <hr />
                     </div>   
-
                 </div>
+                
                 <div className='home__image'>
-                    <div className='home__image-profile layer-home'>
-                        <div className='home__image-photo'>
-                            <img src={ Img } alt="profile"/>
-                        </div>
+                    <div className='home__image-profile'>
+                        <img src={ Img } alt="profile" />
                     </div>
                 </div>
             </div>
