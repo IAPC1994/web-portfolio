@@ -1,16 +1,10 @@
 import React from 'react';
-import { Navbar, Home, About, Skills, Portfolio, Contact, Footer } from './components';
+import { Router } from './router/Router';
 
 export const WebPortfolio = () => {
   return (
     <div>
-        <Navbar />
-        <Home />
-        <About /> 
-        <Skills />
-        <Portfolio />
-        <Contact />
-        <Footer />
+        <Router />
     </div>
   )
 }

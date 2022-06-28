@@ -1,11 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 /* Colors */
 
-$primary: #071330;
-$secondary: #0C4160;
-$tertiary: #738FA7;
-$quaternary: #C3CEDA;
+$background: #FFFFFE;
+$headline: #2B2C34;
+$paragraph: #2B2C34;
+$button: #6246EA;
+$button-text: #FFFFFE;
+$primary: #FFFFFE;
+$secondary: #D1D1E9;
+$tertiary: #E45858;
+$box-shadow: 5px 5px 15px 5px rgba(0,0,0, 0.1);
+
+$quaternary: #fff;
 $dark-grey: #33383a;
 $light-grey: #D8D8D8;
 $white: #fff;
@@ -29,4 +36,30 @@ $border-white: 1px solid $white;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.spacer{
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer{
+    background-image: url('./../../assets/wave.svg');
+}
+
+.layer-home{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('./../../assets/blob-home.svg');
+}
+
+.background-glass{
+    background: rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255,255,255,0.1);
 }

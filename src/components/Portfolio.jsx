@@ -12,7 +12,7 @@ import { portfolioItems } from './../data/portfolio_items';
 
 export const Portfolio = () => {
     return (
-        <section id="portfolio" className='portfolio__section'>
+        <section id="portfolio" className='portfolio__section spacer layer'>
             <div className='portfolio__container'>
                 <h5>My personal work experience</h5>
                 <h1>Portfolio</h1>

@@ -3,7 +3,7 @@ import Img from '../assets/perfil.jpg';
 
 export const About = () => {
     return (
-        <section id="about" className='about__section'>
+        <section id="about" className='about__section spacer layer'>
             <div className='about__title'>
                 <h5>Get to Know</h5>
                 <h1>About Me</h1>

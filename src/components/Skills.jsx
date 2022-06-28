@@ -30,7 +30,7 @@ export const Skills = () => {
     }
 
     return (
-        <section id="skills" className='skills__section'>
+        <section id="skills" className='skills__section spacer layer'>
             <div className='skills__title'>
                 <h1>Skills</h1>
                 <h4>My technical level</h4>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import Img from '../assets/logo512.png';
+import { NavLink } from "react-router-dom";
+// import Img from '../assets/logo512.png';
 
 export const Navbar = () => {
 
@@ -17,15 +18,15 @@ export const Navbar = () => {
         <div id="nav__main" className="nav__container">
              <nav className='nav'>
                 <div className='nav__logo'>
-                    <img src={ Img } className="nav__logo-img" alt='logo'/>
-                    <h1>IAPC Developer</h1>
+                    {/* <img src={ Img } className="nav__logo-img" alt='logo'/> */}
+                    <h1>IAPC DevCode</h1>
                 </div>
                 <ul className='nav__ul'>
-                    <li><a href="#home" onClick={ () => handleToggle() }><i className="fa-solid fa-house"></i> Home</a></li>
-                    <li><a href="#about" onClick={ () => handleToggle() }><i className="fa-solid fa-user"></i> About</a></li>
-                    <li><a href="#skills" onClick={ () => handleToggle() }><i className="fa-solid fa-chart-bar"></i> Skills</a></li>
-                    <li><a href="#portfolio" onClick={ () => handleToggle() }><i className="fa-solid fa-suitcase"></i> Portfolio</a></li>
-                    <li><a href="#contact" onClick={ () => handleToggle() }><i className="fa-solid fa-message"></i> Contact</a></li>
+                    <li><NavLink to='/' style={({ isActive }) => { return { color: isActive ? "#6246EA" : ""}} }>Home</NavLink></li>
+                    <li><NavLink to='/about' style={({ isActive }) => { return { color: isActive ? "#6246EA" : ""}} }>About</NavLink></li>
+                    <li><NavLink to='/skills' style={({ isActive }) => { return { color: isActive ? "#6246EA" : ""}} }>Skills</NavLink></li>
+                    <li><NavLink to='/portfolio' style={({ isActive }) => { return { color: isActive ? "#6246EA" : ""}} }>Portfolio</NavLink></li>
+                    <li><NavLink to='/contact' style={({ isActive }) => { return { color: isActive ? "#6246EA" : ""}} }>Contact</NavLink></li>
                 </ul>
                 <div className='nav__socials'>
                     <a href="https://www.linkedin.com/in/ivan-alejandro-panussis-conejeros/?locale=en_US" target={'_blank'} rel='noreferrer' style={{ fontSize: '1.2rem'}}><i className="fa-brands fa-linkedin"></i></a>
